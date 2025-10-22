@@ -2,23 +2,6 @@
 
 A minimal yet production-ready Go REST API built with the [Chi router](https://github.com/go-chi/chi), using MySQL as a database, Docker Compose for orchestration, and environment-based configuration for development and production.
 
----
-
-## Project Structure
-
-go-two-endpoints/
-├── Dockerfile
-├── docker-compose.yml
-├── .env.dev
-├── .env.prod
-├── go.mod
-├── go.sum
-├── main.go
-├── routes/
-│ └── routes.go
-└── handlers/
-  └── handlers.go
-
 
 ---
 
@@ -79,13 +62,6 @@ The application runs on http://localhost
 Secure Secrets (Production)
 
 Database credentials and sensitive data are stored in Docker secrets (./secrets/ directory), not in .env.prod.
-
-Example structure:
-
-secrets/
-├── db_user.txt
-├── db_password.txt
-└── db_name.txt
 
 Tech Stack
 
